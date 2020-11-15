@@ -18,6 +18,10 @@ public class PagamentoFactory {
             case DEBITO:
                 pagamento = new Debito();
                 break;
+            
+            case PAYPAL:
+                pagamento = new Paypal();
+                break;
 
             default:
                 throw new IllegalArgumentException("Método pagamento inválido");

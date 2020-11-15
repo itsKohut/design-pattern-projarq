@@ -13,13 +13,11 @@ public class LojaFacade {
     private CarrinhoDeCompras carrinho;
     private CarrinhoDeComprasGerenciador gerenciador;
     private Estoque estoque;
-    private Pagamento pagamento;
 
     public LojaFacade() {
         carrinho = CarrinhoDeCompras.getInstance();
         gerenciador = new CarrinhoDeComprasGerenciador();
         estoque = new Estoque();
-        pagamento = null;
 
         gerenciador.addObserver(carrinho);
     }
